@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script defer src="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/02_1.js"> </script>
+
+    <script>
+        function load(url) {
+            window.location = url;
+        }
+    </script>
+    <title>경영정보시스템 11조</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title h3 {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .one {
+            height: 34px;
+            position: relative;
+            float: right;
+        }
+
+        .one .search .search-text {
+            width: 36px;
+            height: 34px;
+            padding: 4px 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fff;
+            color: #777;
+            font-size: 12px;
+            transition: width .4s;
+        }
+
+        .one .search .search-text:focus {
+            width: 190px;
+            border-color: #616952;
+        }
+
+        .one .search .search-text:hover {
+            background-color: aliceblue;
+        }
+
+        .one .search .material-icons {
+            width: 36px;
+            height: 34px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #menubar {
+            background: skyblue;
+        }
+
+        #menubar ul {
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        #menubar ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0px 80px;
+        }
+
+        #menubar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menubar ul li a:hover {
+            color: grey;
+        }
+
+
+        #wrapper {
+            height: auto;
+            min-height: 100%;
+            height: 1000px;
+        }
+
+        .bg-4 {
+            background-color: rgb(75, 137, 193);
+            color: white;
+        }
+
+        .footer {
+            height: 1000px;
+            position: auto;
+            transform: translateY(-100%);
+        }
+
+        .container-fluid {
+            /*height : 140px;
+  	      position : relative;
+          transform : translateY(-100%);
+           height: 10vh;*/
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+        }
+
+        #wrapper .location {
+            position: relative;
+        }
+
+        #wrapper .location-1 {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <div class="right" style="padding-right: 20px;">
+        <div class="one">
+            <div class="search">
+                <input type="text" class="search-text">
+                <input type="submit" class="material-icons" value="search">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <p style="text-align: center;"><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/03.html"
+            style="text-decoration: none; font-size:35px; font-weight:bold; color:black">sha<span
+                style="color:rgb(0, 176, 240)">re</span>frige</h3><br></a></p>
+    <br>
+    <nav id="menubar">
+        <ul>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/About.html">About</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/location.html">우리동네 공유냉장고</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/냉장고 관리하기.html">냉장고 관리하기</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/마이페이지.html">마이페이지</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/community.html">Community</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper"><br>
+        <div class="location">
+            <div class="location-1">
+                <h3 style="font-size:20px; font-weight:bold;">•우리동네 공유냉장고</h3><br>
+                
+                <form action="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/location-목록 출력.html" method="post">
+                <select id="city" style="height: 30px;">
+                    <option value="1" selected>전국</option>
+                    <option value="2">강원도</option>
+                    <option value="3">경기도</option>
+                    <option value="4">경상남도</option>
+                    <option value="5">경상북도</option>
+                    <option value="6">광주광역시</option>
+                    <option value="7">대구광역시</option>
+                    <option value="8">대전광역시</option>
+                    <option value="9">부산광역시</option>
+                    <option value="10">서울특별시</option>
+                    <option value="11">세종특별자치시</option>
+                    <option value="12">울산광역시</option>
+                    <option value="13">인천광역시</option>
+                    <option value="14">전라남도</option>
+                    <option value="15">전라북도</option>
+                    <option value="16">제주특별자치도</option>
+                    <option value="17">충청남도</option>
+                    <option value="18">충청북도</option>
+                </select>
+                <select id="javascript:show(gyeong)" style="height: 30px;">
+                    <option value="0" selected>시/군</option>
+                    <option value="1">가평군</option>
+                    <option value="2">고양시</option>
+                    <option value="3">과천시</option>
+                    <option value="4">광명시</option>
+                    <option value="5">광주시</option>
+                    <option value="6">구리시</option>
+                    <option value="7">군포시</option>
+                    <option value="8">김포시</option>
+                    <option value="9">남양주시</option>
+                    <option value="10">동두천시</option>
+                    <option value="11">부천시</option>
+                    <option value="12">성남시</option>
+                    <option value="13">수원시</option>
+                    <option value="14">시흥시</option>
+                    <option value="15">안산시</option>
+                    <option value="16">안성시</option>
+                    <option value="17">양주시</option>
+                    <option value="18">양평군</option>
+                    <option value="19">여주시</option>
+                    <option value="20">연천군</option>
+                    <option value="21">오산시</option>
+                    <option value="22">용인시</option>
+                    <option value="23">의왕시</option>
+                    <option value="24">의정부시</option>
+                    <option value="25">이천시</option>
+                    <option value="26">파주시</option>
+                    <option value="27">평택시</option>
+                    <option value="28">포천시</option>
+                    <option value="29">하남시</option>
+                    <option value="30">화성시</option>
+                </select>
+
+                <input type="text" style="width: 170px; height:26px; border:1px solid; border-radius: 5px;">
+                <input type="submit" class="material-icons" value="search">
+                </form> <br>
+
+                
+                <iframe id="map" width="700" height="600" frameborder="0" scrolling="no" marginheight="0" 		marginwidth="0" ></iframe><br>
+                
+                <script>
+                if(navigator.geolocation) 
+                    navigator.geolocation.getCurrentPosition(success); // 현재 위치 정보 요청
+                else 
+                    alert("지원하지 않음");
+                
+                // 위치 파악 시 success() 호출. 위치 정보가 들어 있는 position 객체가 매개 변수로 넘어온다.
+                function success(position) {
+                    let lat = position.coords.latitude; // 위도
+                    let lon = position.coords.longitude; // 경도
+                    let acc = position.coords.accuracy; // 정확도
+                
+                    // 위도와 경도의 소수점 이하 자리가 너무 길어 유효 숫자 6자리로 짜름
+                    lat = lat.toPrecision(6); lon = lon.toPrecision(6);
+                
+                    let now = new Date();
+                    let text = "현재 시간 " + now.toUTCString() + "<br>";
+                    text += "현재 위치 (위도 " + lat + "°, 경도 " + lon + "°)<br>";
+                    text += "정확도 " + acc + "m<br>";
+                    
+                
+                    let map = document.getElementById("map");
+                     map.src ="https://www.openstreetmap.org/export/embed.html?bbox=" + (parseFloat(lon)-0.01) + "%2C" + (parseFloat(lat)-0.01) + "%2C" + (parseFloat(lon)+0.01) + "%2C" + (parseFloat(lat) + 0.01);
+                         // lat와 lon은 문자열이므로 숫자로 바꾸기 위해 parseFloat() 사용
+                
+                     let maplink = document.getElementById("bigmaplink");
+                    let zoom = 15; // 지도의 줌 레벨. 숫자가 클수록 자세한 지도
+                    let marker = red;
+                    maplink.href = "https://www.openstreetmap.org/#map=" + zoom + "/" + marker + "/" + lat + "/" + lon;
+                }
+                /* 
+                    여기서부터는 홈페이지가 https가 아닌 이유로 위치 정보 서비스가 실행되지 않으므로 
+                    서울시 성북구 낙산공원의 위치로 출력되도록 하였습니다. 
+                    독자들이 로컬 컴퓨터에서 브라우저로 바로 이 예제를 실행시키려면 
+                    추가한 아래 코드를 모두 지우면 됩니다.
+                */
+                let sample = {
+                    coords : {
+                        latitude : Number(37.280438),
+                        longitude : Number(127.021563),
+                        accuracy : Number(1000)
+                    }
+                }
+                setTimeout("success(sample)", 200); // 0.2초 후에 낙산공원 위치 정보 출력
+                /* 여기까지 입니다. */
+                
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-left">
+        <p style="font-size: 20px;">sharefrige</p>
+        <p style="font-size: 13px;">문의 2022-0530</p>
+        <p style="font-size: 13px;">This page is made by Team 11 이가을, 함명식</p>
+    </footer>
+</body>
+
+</html>

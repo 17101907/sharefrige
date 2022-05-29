@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script defer src="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/02_1.js"> </script>
+
+  <script>
+    function load(url) {
+      window.location = url;
+    }
+  </script>
+  <title>경영정보시스템 11조</title>
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title h3 {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .one {
+      height: 34px;
+      position: relative;
+      float: right;
+    }
+
+    .one .search .search-text {
+      width: 36px;
+      height: 34px;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5px;
+      outline: none;
+      background-color: #fff;
+      color: #777;
+      font-size: 12px;
+      transition: width .4s;
+    }
+
+    .one .search .search-text:focus {
+      width: 190px;
+      border-color: #616952;
+    }
+
+    .one .search .search-text:hover {
+      background-color: aliceblue;
+    }
+
+    .one .search .material-icons {
+      width: 36px;
+      height: 34px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    #menubar {
+      background: skyblue;
+    }
+
+    #menubar ul {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    #menubar ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0px 80px;
+    }
+
+    #menubar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #menubar ul li a:hover {
+      color: grey;
+    }
+
+
+    #wrapper {
+      height: auto;
+      min-height: 100%;
+      height: 1100px;
+    }
+
+    .bg-4 {
+      background-color: rgb(75, 137, 193);
+      color: white;
+    }
+
+    .footer {
+      height: 1000px;
+      position: auto;
+      transform: translateY(-100%);
+    }
+
+    .container-fluid {
+      /*height : 140px;
+                  position : relative;
+                transform : translateY(-100%);
+                 height: 10vh;*/
+      padding-top: 5px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+    }
+
+    #wrapper .about {
+      position: relative;
+    }
+
+    #wrapper .about-1 {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <div class="right" style="padding-right: 20px;">
+    <div class="one">
+      <div class="search">
+        <input type="text" class="search-text">
+        <input type="submit" class="material-icons" value="search">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <p style="text-align: center;"><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/03.html"
+      style="text-decoration: none; font-size:35px; font-weight:bold; color:black">sha<span
+        style="color:rgb(0, 176, 240)">re</span>frige</h3><br></a></p>
+  <br>
+  <nav id="menubar">
+    <ul>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/About.html">About</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/location.html">우리동네 공유냉장고</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/냉장고 관리하기.html">냉장고 관리하기</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/마이페이지.html">마이페이지</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/community.html">Community</a></li>
+    </ul>
+  </nav>
+
+  <div id="wrapper">
+    <div class="about">
+      <div class="about-1">
+        <br>
+        <h3 style="font-size: 20px; font-weight :900">•사업 소개</h3>
+        <img src="C:\Users\USER\Desktop\17101907\22-1\경영정보시스템\Project2\about표지.PNG" width="900" height="600">
+        <br>
+        'Sha<span style="color:rgb(0, 176, 240)">re</span>frige'는 share(공유하다)와 refrigerator(냉장고)의 합성어로, 지역주민과 음식을 나누는
+        공동체 사업입니다.<br>
+        이 사이트는 현재 경기 일부 지역에서 다양한 이름으로 진행하고 있는 공유냉장고 사업을 전국적으로 확대시행하고,<br>
+        효율적으로 운영·관리하기 위한 통합페이지입니다.
+        <br><br><br>
+        <h3 style="font-size: 20px; font-weight :900">•이용규칙</h3>
+        1. 공유냉장고는 우리가 주인입니다. 마을이 공동으로 관리합니다.<br>
+        &nbsp;&nbsp;&nbsp;이용자 규칙에 동의하시는 주민 모두 사용 가능합니다.<br>
+        2. 주민 누구나 음식을 기부하고, 나눔받을 수 있습니다.<br>
+        3. 음식을 기부하실 때는 유통기한, 제조일을 표시합니다.<br>
+        4. 음식을 나눔받으실 때는 다른 사람을 위해 필요한 만큼만 가져갑니다.<br>
+        5. 반드시 안전하고 위생적인 음식만 공유합니다.<br>
+        &nbsp;&nbsp;&nbsp;<span style="color:red">공유불가</span>: 유통기한 잔여일 2일 이내 식품, 주류, 건강보조식품, 약품류 등<br>
+       
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid bg-4 text-left">
+    <p style="font-size: 20px;">sharefrige</p>
+    <p style="font-size: 13px;">문의 2022-0530</p>
+    <p style="font-size: 13px;">This page is made by Team 11 이가을, 함명식</p>
+  </footer>
+</body>
+
+</html>

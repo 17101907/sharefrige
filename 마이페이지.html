@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script defer src="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/02_1.js"> </script>
+
+  <script>
+    function load(url) {
+      window.location = url;
+    }
+  </script>
+  <title>경영정보시스템 11조</title>
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .title h3 {
+      display: inline-block;
+      text-align: center;
+    }
+
+    .one {
+      height: 34px;
+      position: relative;
+      float: right;
+    }
+
+    .one .search .search-text {
+      width: 36px;
+      height: 34px;
+      padding: 4px 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 5px;
+      outline: none;
+      background-color: #fff;
+      color: #777;
+      font-size: 12px;
+      transition: width .4s;
+    }
+
+    .one .search .search-text:focus {
+      width: 190px;
+      border-color: #616952;
+    }
+
+    .one .search .search-text:hover {
+      background-color: aliceblue;
+    }
+
+    .one .search .material-icons {
+      width: 36px;
+      height: 34px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    #menubar {
+      background: skyblue;
+    }
+
+    #menubar ul {
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+
+    #menubar ul li {
+      display: inline-block;
+      list-style-type: none;
+      padding: 0px 80px;
+    }
+
+    #menubar ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #menubar ul li a:hover {
+      color: grey;
+    }
+
+
+    #wrapper {
+      height: auto;
+      min-height: 100%;
+      height: 700px;
+    }
+
+    .bg-4 {
+      background-color: rgb(75, 137, 193);
+      color: white;
+    }
+
+    .footer {
+      height: 1000px;
+      position: auto;
+      transform: translateY(-100%);
+    }
+
+    .container-fluid {
+      /*height : 140px;
+  	      position : relative;
+          transform : translateY(-100%);
+           height: 10vh;*/
+      padding-top: 5px;
+      padding-bottom: 10px;
+      padding-left: 50px;
+    }
+
+    #wrapper .point {
+      position: relative;
+    }
+
+    #wrapper .point-1 {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    table {
+      width: 1000px;
+      height: 300px;
+      border-collapse: collapse;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    #column2 {
+width: 550px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <br>
+  <div class="right" style="padding-right: 20px;">
+    <div class="one">
+      <div class="search">
+        <input type="text" class="search-text">
+        <input type="submit" class="material-icons" value="search">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <p style="text-align: center;"><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/03.html"
+      style="text-decoration: none; font-size:35px; font-weight:bold; color:black">sha<span
+        style="color:rgb(0, 176, 240)">re</span>frige</h3><br></a></p>
+  <br>
+  <nav id="menubar">
+    <ul>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/About.html">About</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/location.html">우리동네 공유냉장고</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/냉장고 관리하기.html">냉장고 관리하기</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/마이페이지.html">마이페이지</a></li>
+      <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/community.html">Community</a></li>
+    </ul>
+  </nav>
+
+  <div id="wrapper">
+    <div class="point">
+      <div class="point-1">
+        <br>
+        <h3 style="font-size: 20px; font-weight :900">
+          <form action="C:\Users\USER\Desktop\17101907\22-1\경영정보시스템\Project2\지역화폐 교환.html" method="post">
+            •기부 누적 포인트: 13000p&nbsp;
+            <button
+              style="width:120px; height:35px; border:1px solid; border-color: #777; border-radius:5px; background-color: rgb(211, 233, 211); font-size:15px; color:#777;">지역화폐
+              교환</button>
+          </form>
+        </h3>
+
+        <br>
+        <h3 style="font-size: 20px; font-weight :900">•포인트 적립 내역</h3>
+
+        <table border="1">
+          <th>번호</th>
+          <th id="column2">내용</th>
+          <th>일자</th>
+          <th>적립 포인트</th>
+          <tr></tr>
+            <td>1</td>
+            <td>지역화폐 교환</td>
+            <td>2022.06.13</td>
+            <td>-10000p</td>
+          <tr>
+            <td>2</td>
+            <td>유통기한 경과 신고</td>
+            <td>2021.09.27</td>
+            <td>+50p</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>음식(마카롱) 기부</td>
+            <td>2021.04.08</td>
+            <td>+10p</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>음식(포도) 기부</td>
+            <td>2020.11.15</td>
+            <td>+10p</td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid bg-4 text-left">
+    <p style="font-size: 20px;">sharefrige</p>
+    <p style="font-size: 13px;">문의 2022-0530</p>
+    <p style="font-size: 13px;">This page is made by Team 11 이가을, 함명식</p>
+  </footer>
+</body>
+
+</html>

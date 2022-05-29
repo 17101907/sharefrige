@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script defer src="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/02_1.js"> </script>
+
+    <script>
+        function load(url) {
+            window.location = url;
+        }
+    </script>
+    <title>경영정보시스템 11조</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title h3 {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .one {
+            height: 34px;
+            position: relative;
+            float: right;
+        }
+
+        .one .search .search-text {
+            width: 36px;
+            height: 34px;
+            padding: 4px 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+            outline: none;
+            background-color: #fff;
+            color: #777;
+            font-size: 12px;
+            transition: width .4s;
+        }
+
+        .one .search .search-text:focus {
+            width: 190px;
+            border-color: #616952;
+        }
+
+        .one .search .search-text:hover {
+            background-color: aliceblue;
+        }
+
+        .one .search .material-icons {
+            width: 36px;
+            height: 34px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        #menubar {
+            background: skyblue;
+        }
+
+        #menubar ul {
+            margin: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        #menubar ul li {
+            display: inline-block;
+            list-style-type: none;
+            padding: 0px 80px;
+        }
+
+        #menubar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menubar ul li a:hover {
+            color: grey;
+        }
+
+
+        #wrapper {
+            height: auto;
+            min-height: 100%;
+            height: 1200px;
+        }
+
+        .bg-4 {
+            background-color: rgb(75, 137, 193);
+            color: white;
+        }
+
+        .footer {
+            height: 1000px;
+            position: auto;
+            transform: translateY(-100%);
+        }
+
+        .container-fluid {
+            /*height : 140px;
+  	      position : relative;
+          transform : translateY(-100%);
+           height: 10vh;*/
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 50px;
+        }
+
+        #wrapper .community {
+            position: relative;
+        }
+
+        #wrapper .community-table {
+            position: absolute;
+            left: 20%;
+            transform: translate(-10%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <div class="right" style="padding-right: 20px;">
+        <div class="one">
+            <div class="search">
+                <input type="text" class="search-text">
+                <input type="submit" class="material-icons" value="search">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <p style="text-align: center;"><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/03.html"
+            style="text-decoration: none; font-size:35px; font-weight:bold; color:black">sha<span
+                style="color:rgb(0, 176, 240)">re</span>frige</h3><br></a></p>
+    <br>
+    <nav id="menubar">
+        <ul>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/About.html">About</a></li>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/location.html">우리동네 공유냉장고</a></li>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/냉장고 관리하기.html">냉장고 관리하기</a></li>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/마이페이지.html">마이페이지</a></li>
+            <li><a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/community.html">Community</a></li>
+        </ul>
+    </nav>
+
+    <div id="wrapper">
+        <div class="community">
+            <div class="community-table">
+                <h3 style="font-size: 20px; font-weight :900">•공유냉장고 이용후기</h3>
+                <a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/공유냉장고-이용후기.html">
+                <img src="공유냉장고 이용후기1.png" width="300" height="300"></a>&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기2.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기3.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기4.png" width="300" height="300"><br><br>
+                <img src="공유냉장고 이용후기5.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기6.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기7.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="공유냉장고 이용후기8.jpg" width="300" height="300">
+                <br><br>
+                <h3 style="font-size: 20px; font-weight :900">•우리동네 후원자 소개</h3>
+                <a href="C:/Users/USER/Desktop/17101907/22-1/경영정보시스템/Project2/우리동네 후원자소개.html">
+                <img src="우리동네 후원자소개4.png" width="300" height="300"></a>&nbsp;&nbsp;
+                <img src="우리동네 후원자소개1.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="우리동네 후원자소개2.png" width="300" height="300">&nbsp;&nbsp;
+                <img src="우리동네 후원자소개3.png" width="300" height="300"><br><br>
+                공유냉장고 활동을 통해 적립한 포인트는 지역화폐로 교환 후, 우리동네 후원식당/마트 등에서 사용할 수 있습니다.<br>
+                우리동네 공유냉장고에 후원하실 분은 2022-0530으로 문의바랍니다.
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-left">
+        <p style="font-size: 20px;">sharefrige</p>
+        <p style="font-size: 13px;">문의 2022-0530</p>
+        <p style="font-size: 13px;">This page is made by Team 11 이가을, 함명식</p>
+    </footer>
+</body>
+
+</html>
